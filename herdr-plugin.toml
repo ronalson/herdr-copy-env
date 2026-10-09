@@ -1,8 +1,8 @@
 id = "ronalson.copy-env"
 name = "Copy Env"
-version = "0.1.0"
+version = "0.2.0"
 min_herdr_version = "0.9.0"
-description = "Copy .env files into new Herdr worktrees"
+description = "Set up new Herdr worktrees: copy .env files and folders, pick a port, start the dev server in a tab"
 platforms = ["linux", "macos"]
 
 [[events]]
@@ -11,6 +11,6 @@ command = ["python3", "copy_env.py"]
 
 [[actions]]
 id = "copy"
-title = "Copy .env into this worktree"
+title = "Set up this worktree (copy files, start server)"
 contexts = ["workspace"]
 command = ["python3", "copy_env.py"]

@@ -1,0 +1,7 @@
+{
+  "copy": [".env", ".env.local", "context/"],
+  "install": "pnpm install",
+  "dev": "pnpm dev",
+  "port_base": 3000,
+  "overwrite": false
+}
